@@ -36,7 +36,6 @@ let toAmount, fromAmount
       
 
       const firstCurrency = Object.keys(data.rates)[0]
-      console.log(data, 'ikjb')
       setCurrencyOptions([data.base, ...Object.keys(data.rates)]) //putting all the currencies together
       
       setFromCurrency(data.base) //eur
@@ -64,9 +63,8 @@ let toAmount, fromAmount
 
 
     function handleFromAmountChange(e) {
-      console.log(e.target.value, 'JHVB')
-      setAmount(e.target.value)
-     
+
+      setAmount(e.target.value)    
       setAmountInFromCurrency(true)
     }
 
